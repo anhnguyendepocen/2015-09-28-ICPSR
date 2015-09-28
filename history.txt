@@ -1,0 +1,198 @@
+  337  ls
+  338  cd misc_code
+  339  ls
+  340  pwd
+  341  cd
+  342  cd /
+  343  ls
+  344  cd bin
+  345  ls
+  346  cd
+  347  cd /home/emily/
+  348  cd .
+  349  cd ..
+  350  pwd
+  351  cd ..
+  352  pwd
+  353  cd
+  354  ls
+  355  cd Desktop/
+  356  cd data
+  357  ls
+  358  cd .
+  359  cd ~/repos/
+  360  ls
+  361  cd shell-novice/
+  362  cd data
+  363  ls
+  364  cd Users/
+  365  ls
+  366  cd nelle
+  367  ls
+  368  clear
+  369  pwd
+  370  ls
+  371  ls
+  372  ls -F
+  373  ls --help
+  374  clear
+  375  ls h
+  376  ls -h
+  377  man ls
+  378  pwd
+  379  emacs example.txt
+  380  cat example.txt 
+  381  emacs example2.txt
+  382  nano example2.txt
+  383  cat example2.txt 
+  384  rm example2.txt 
+  385  cat example.txt 
+  386  mkdir example_dir
+  387  ls
+  388  clear
+  389  cd example_dir/
+  390  ls
+  391  pwd
+  392  cd ..
+  393  rm example_dir/
+  394  rm -r example_dir/
+  395  ls
+  396  ls
+  397  mkdir text_files
+  398  ls
+  399  clear
+  400  ls
+  401  mv notes.txt text_files/
+  402  cd text_files/
+  403  ls
+  404  mv notes.txt ..
+  405  ls
+  406  cd ..
+  407  ls
+  408  cp notes.txt text_files/
+  409  cd text_files/
+  410  ls
+  411  cat notes.txt 
+  412  cd ..
+  413  cat notes.txt 
+  414  cp notes.txt notes_backup.txt
+  415  ls
+  416  mv notes_backup.txt notes_better_name.txt
+  417  ls
+  418  cat notes_better_name.txt 
+  419  ls
+  420  ls *.txt
+  421  mv *.txt text_files/
+  422  ls
+  423  cd text_files/
+  424  ls
+  425  history
+  426  history > history.txt
+  427  less history.txt 
+  428  cd .. && cd text_files
+  429  cd .. && cd creatures
+  430  pwd
+  431  cd .. && ls
+  432  cd molecules/
+  433  ls
+  434  cat cubane.pdb 
+  435  wc *.pdb
+  436  wc -l *.pdb
+  437  wc -l *.pdb> lengths.dat
+  438  cat lengths.dat 
+  439  sort lengths.dat 
+  440  sort -n lengths.dat 
+  441  sort -n lengths.dat > sorted-lengths.dat
+  442  cat sorted-lengths.dat 
+  443  wc -l *.pdb | sort -n
+  444  wc -l *.pdb | sort -n | head -1
+  445  wc -l *.pdb | sort -n | tail -1
+  446  wc -l *.pdb | sort -n | tail -2
+  447  touch "space file"
+  448  ls
+  449  ls "space file"
+  450  cat "space file"
+  451  cat space\ file
+  452  cat space\ file 
+  453  cd ..
+  454  ls
+  455  cd north-pacific-gyre/
+  456  ls
+  457  cd 2012-07-03/
+  458  ls
+  459  wc -l *.txt | sort -n | head -5
+  460  wc -l *.txt | sort -n | tail -5
+  461  echo "hello"
+  462  echo "hello" > test.txt
+  463  cat test.txt 
+  464  echo "hello" > test.txt
+  465  cat test.txt 
+  466  echo "hello" >> test2.txt
+  467  cat test2.txt 
+  468  echo "hello" >> test2.txt
+  469  cat test2.txt 
+  470  cd ..
+  471  cd ../..
+  472  cd nelle/
+  473  ls
+  474  mv text_files/animals.txt  .
+  475  ls
+  476  cat animals.txt 
+  477  cat animals.txt 
+  478  sort animals.txt | uniq > final.txt
+  479  cat final.txt 
+  480  sort animals.txt | uniq > final.txt
+  481  cat final.txt 
+  482  cd creatures/
+  483  ls
+  484  for filename in basilisk.dat unicorn.dat ; do head -3 $filename; done
+  485  for filenmae in *.dat; do echo $filename; done
+  486  ls
+  487  for filenmae in *.dat; do echo $filename; done
+  488  ls *.dat
+  489  for filename in basilisk.dat unicorn.dat ; do head -3 $filename; done
+  490  for filename in basilisk.dat unicorn.dat ; do echo $filename; done
+  491  for filename in basilisk.dat unicorn.dat; do echo "Hello!"; done
+  492  expr 3 + 4
+  493  cd ../molecules/
+  494  ls
+  495  cat cubane.pdb 
+  496  myvar = 5
+  497  $myvar = 5
+  498  $myvar=5
+  499  myvar=5
+  500  echo $myvar
+  501  echo $myvar
+  502  clear
+  503  cd ~/repos/shell-novice/data/Users/nelle/
+  504  cd molecules/
+  505  for filename in *.pdb; do head -1 $filename >> final.txt; done
+  506  cat final.txt 
+  507  nano middle.sh
+  508  nano middle.sh 
+  509  bash middle.sh 
+  510  cat octane.pdb 
+  511  nano middle.sh 
+  512  nano middle.sh 
+  513  bash middle.sh cubane.pdb 
+  514  nano middle.sh 
+  515  bash middle.sh pentane.pdb -20 -5 
+  516  bash middle.sh pentane.pdb -20 -2 
+  517  nano middle.sh 
+  518  nano middle.sh 
+  519  middle.sh pentane.pdb -20 -2 
+  520  ./middle.sh pentane.pdb -20 -2 
+  521  nano middle.sh 
+  522  nano middle.sh 
+  523  ./middle.sh pentane.pdb 20 2 
+  524  bash middle.sh pentane.pdb 20 2 
+  525  echo *.*
+  526  nano examplescript.sh
+  527  bash examplescript.sh cubane.pdb 
+  528  bash examplescript.sh cubane.pdb ethane.pdb 
+  529  bash examplescript.sh cubane.pdb ethane.pdb octane.pdb 
+  530  nano add_ICSPR.sh
+  531  bash add_ICSPR.sh *.pdb
+  532  ls
+  533  nano add_ICSPR.sh 
+  534  history > history.txt
