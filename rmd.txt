@@ -1,0 +1,94 @@
+Plain text
+
+*italics* and _italics_
+
+**bold** and __bold__
+
+superscript^2^
+
+subscript~2~
+
+~~strikethrough~~
+
+[link](www.rstudio.com)
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+endash: --
+
+emdash: ---
+
+ellipsis: ...
+
+inline equation: $A = \pi*r^{2}$
+
+image: ![](https://www.rstudio.com/wp-content/uploads/2014/03/blue-125.png)
+
+horizontal rule (or slide break):
+
+*** 
+
+> block quote
+
+* unordered list
+* item 2
+ + sub-item 1
+ + sub-item 2
+
+1. ordered list
+2. item 2
+ + sub-item 1
+ + sub-item 2 
+
+you can write `inline` code with a back-tick
+
+```
+code blocks display
+with fixed-width fond
+```
+
+
+Table Header | Second Header
+------------ | --------------
+Cell 1       | Cell 2
+Cell 3       | Cell 4
+
+
+
+```{r}
+summary(1:10)
+```
+
+You can also embed plots, for example:
+
+```{r plot, echo=FALSE}
+boxplot(1:10)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Add more R code chunk arguments:
+```{r histogram, echo=TRUE, eval=TRUE, fig.width=5, fig.height=4, fig.align='center'}
+hist(1:10)
+```
+
+Inline code is underappreciated:
+
+Last night, I saw `r 3 + 4` shooting stars.
+
+---
+title: "test_rmd"
+output: html_document
+author: "someone""
+date: "sometime"
+---
